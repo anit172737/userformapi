@@ -5,7 +5,7 @@ let MongoClient = require('mongodb').MongoClient;
 
 app.use(express.json());
 app.use(cors());
-app.listen(8080, ()=> console.log('server running on port 8080'));
+
 
 
 var url = "mongodb://localhost:27017/";
@@ -104,3 +104,5 @@ app.delete('/api/applicants/:email', (req, res) => {
     });
 });
 
+
+app.listen(8080, ()=> console.log('server running on port 8080'));
